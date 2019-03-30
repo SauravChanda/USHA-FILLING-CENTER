@@ -1,0 +1,121 @@
+.header{
+    background:purple;
+    border-radius: 3px;
+    padding: 15px;
+}
+.header:hover{
+    background: rgb(107, 0, 107);
+}
+.header a{
+    padding: 10px;
+    text-decoration: none;
+    color: white;
+    padding: 10px;
+}
+.header a:hover{
+    background:white;
+    text-decoration: none;
+    color: black;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px;
+}
+.login{
+    text-align: center;
+    background: purple;
+    border-radius: 5px;
+    padding: 10px;
+    color: white;
+}
+.login:hover{
+    background: rgb(107, 0, 107);
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.288);
+    
+}
+.login input{
+    padding: 10px 5px;
+    border-color: white;
+    border: 5px solid white;
+    border-radius: 5px;
+
+}
+.login input:hover{
+    box-shadow: 0px 0px 10px black;
+}
+.logindiv{
+    padding: 5% 35%;
+}
+body{
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.dgrid{
+    display: grid;
+    grid-template-columns: 1fr,1fr;
+    grid-template-areas: "a b";
+    grid-column-gap: 10px;
+}
+.dgridinsert{
+    grid-area: a;
+    display: block;
+    overflow: auto;
+}
+.dgridview{
+    grid-area: b;
+    display: block;
+    max-height: 75vh;
+    overflow: auto;
+}
+.stable{
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
+    border-bottom: 1px solid #ddd;
+    border-collapse: collapse;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.288);
+}
+
+.stable input{
+    width: 100%;
+    height: 100%;
+  }
+.stable input::-moz-placeholder{
+  color: purple;
+}
+.stable input::-webkit-input-placeholder{
+    color: purple;
+  }
+.stable td{
+    padding: 5px;
+    text-align: center;
+}
+.stable th{
+    background: purple;
+    color: white;
+    padding: 5px;
+}
+.stable td:hover{
+    background-color: rgb(252, 250, 250);
+}
+.stable th:hover{
+    background-color: rgb(107, 0, 107);
+}
+.sbutton{
+    padding: 10px;
+    border-style: none;
+    background: purple;
+    color: white;
+    border-radius: 5px;
+}
+.sbutton:hover{
+    padding: 10px;
+    background: green;
+    color: white;
+    box-shadow: 0px 0px 10px;
+    border-radius: 5px;
+}
+.heading{
+    text-align: center;
+    color: rgb(105, 0, 105);
+}
+

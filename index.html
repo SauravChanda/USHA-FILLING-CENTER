@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="stylesheet" href="style.css">
+  <title>Hello User</title>
+  
+<script>
+  function check(){
+    var pass=document.myform.pass;
+    var user=document.myform.user;
+  
+    if(user.value==""){
+      alert("enter a username");
+      return false;
+    }
+    else if(pass.value==""){
+      alert("password cannot be blank");
+      return false;
+    }
+    }
+  </script>
+</head>
+<body>
+  <div class="header">
+    <a href="index.html">User</a>
+    <a href="adminlogin.html">Admin</a>
+  </div>
+  <h1 style="text-align: center;">USHA FILLING STATION</h1>
+  <h2 style="text-align: center;">USER LOGIN</h2>
+<div class="logindiv">
+  <form name="myform" onsubmit="return check()" action="login.php" method="POST" class="login">
+   <br> <input type="text" placeholder="Username" name="user"><br><br>
+    <input type="password" placeholder="Password" name="pass"><br><br>
+    <input type="submit" style="background: white"><br>
+    &nbsp;
+  </form>
+</div>
+</body>
+</html>

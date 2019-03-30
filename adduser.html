@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="stylesheet" href="style.css">
+  <title>Hello User</title>
+
+<script>
+function check(){
+  var pass=document.myform.password;
+  var repass=document.myform.repassword;
+  var user=document.myform.user;
+
+  if(user.value==""){
+    alert("enter a username");
+    return false;
+  }
+  else if(pass.value==""){
+    alert("password cannot be blank");
+    return false;
+  }
+  else if(pass.value!=repass.value){
+    alert("Password do not match");
+    return false;
+  }
+  }
+</script>
+
+</head>
+<body>
+  <div class="header">
+    <a style="font-size: 20px;background-color: grey;border-radius: 5px; ">Admin home</a>
+    <a href="viewsheet.php">View machine details</a>
+    <a href="adduser.html">Add employee</a>
+    <a href="edituser.php">Employee details</a>
+    <a href="admindaily.php">Daily Sheet</a>
+    <a href="adminlogin.html" style="float:right; padding:3px;">logout</a>
+</div>
+  
+  <h2 >Add user login details</h2>
+<div>
+  <form name="myform" action="adduser.php" method="POST" onsubmit="return check()">
+    <table class="stable" border=1>
+
+    <tr> <th>Username :</th><td><input type="text" name="user"></td></tr>
+    <tr> <th>Password :</th><td><input type="password" name="password"></td></tr>
+    <tr> <th>Retype Password :</th><td><input type="password" name="repassword"></td></tr>
+    <tr> <td colspan="2">Personal details:</td></tr>
+    <tr> <th>First name :</th><td><input type='text' name="fname"></td></tr>
+    <tr> <th>Middle name :</th><td><input type='text' name="mname"></td></tr>
+    <tr> <th>Last name :</th><td><input type='text' name="lname"></td></tr>
+    <tr> <th>DOB :</th><td><input type='date' name="dob"></td></tr>
+    <tr> <th>Age :</th><td><input type='number' name="age"></td></tr>
+    <tr> <th>Address :</th><td><input type="text" name="address"></td></tr>
+    <tr> <th>Phone :</th><td><input type="number" name="phone"></td></tr>
+    <tr> <th>Sex :</th><td><select name="sex">
+      <option value="Male">Male</option>
+      <option value="Female">Female</option>
+      <option value="Others">Others</option>
+    </select></td></tr>
+    <tr> <th>Father :</th><td><input type="text" name="father"></td></tr>
+    <tr> <th>Education :</th><td><select name="education">
+      <option value="Matric">Matric</option>
+      <option value="HS">HS</option>
+      <option value="Graduate">Graduate</option>
+      <option value="Post Graduate">Post Grduate</option>
+    </select></td></tr>
+
+    <tr><td colspan="2">Bank details: </td></tr>
+    <tr> <th>CIF No :</th><td><input type="number" name="cif"></td></tr>
+    <tr> <th>A/C No :</th><td><input type="number" name="acc"></td></tr>
+    <tr> <th>Bank Name :</th><td><input type="text" name="bank"></td></tr>
+    <tr> <th>IFSC Code :</th><td><input type="text" name="ifsc"></td></tr>
+    <tr> <th>Branch Name :</th><td><input type="text" name="branchname"></td></tr>
+    <tr> <th>Branch Code :</th><td><input type="number" name="branchcode"></td></tr>
+    <tr> <th>MICR Code :</th><td><input type="text" name="micr"></td></tr>
+
+    </table><br>
+    &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp; <input type="submit" class="sbutton">
+  </form>
+</div>
+</body>
+</html>
