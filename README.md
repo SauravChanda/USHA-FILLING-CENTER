@@ -1,30 +1,30 @@
 # USHA-FILLING-CENTER
 
-Contents
+## Contents
 
-Installation
-Introduction
-Admin
-View machine details
-Add employee
-Employee details
-View or update employee details
-Remove employee
--Daily sheet
-View daly sheet
-Delete a perticular date entry
-User
-Daily sheet entry
-View details
-Credit
-Debit
-Lube Details
-Lube add or remove
-Lube stock entry
-Lube sale entry
-View and print
-Daily report
-Periodic report
+1. Installation
+1. Introduction
+1. Admin
+1. View machine details
+1. Add employee
+1. Employee details
+1. View or update employee details
+1. Remove employee
+1. -Daily sheet
+1. View daly sheet
+1. Delete a perticular date entry
+1. User
+1. Daily sheet entry
+1. View details
+1. Credit
+1. Debit
+1. Lube Details
+1. Lube add or remove
+1. Lube stock entry
+1. Lube sale entry
+1. View and print
+1. Daily report
+1. Periodic report
 
 ## Installation
 
